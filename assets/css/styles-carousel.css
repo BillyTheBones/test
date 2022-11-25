@@ -1,0 +1,45 @@
+.carousel  {
+   max-width: 1080px; /* ������ ����� ����� */
+   margin: 50px auto;
+   width:100%;
+}
+.carousel-wrapper {
+   margin: 10px 30px; /* ������� ��� ������� */
+   overflow: hidden; /* �������� ����������, ��������� �� ����� �������� ������� */
+   position:relative;
+}
+.carousel-items {
+   width: 10000px; /* ������������� ������� ������ ��� ������ ��������� */
+   position: relative; /* ������������� ���� ������������ �������� ������� �������� */
+}
+.carousel-block {
+   float: left; /* ����������� ��� �������� �������� � ��� */
+   width: 320px; /* ����� ������ ������� �������� */
+   padding: 10px 10px 10px 0px; /* ������ ������, ����� �������� �� ��������� */
+}
+.carousel-block img{
+	display:block;
+}
+
+/*********** BUTTONS ***********/
+.carousel-button-left a, .carousel-button-right a{
+   width: 25px; 
+   height: 36px; 
+   position: relative;
+   top: 80px; 
+   cursor: pointer; 
+   text-decoration:none;
+}
+.carousel-button-left a{
+   float: left; 
+   background: url(../images/carousel-left.png); 
+}
+.carousel-button-right a{
+   float: right;
+   background: url(../images/carousel-right.png); 
+}
+
+/*********** SHADOW ***********/
+.shadow{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}

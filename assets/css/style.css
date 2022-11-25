@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.6;
+    color: black;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #fff;
+}
+
+.header-inner {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    font-size: 15px;
+
+}
+
+.nav-link {
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2 linear;
+}
+
+.nav-link:hover {
+    color: #9370DB;
+}
+
+/* BEGIN BRICK*/
+.begin-brick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.begin-brick-inner {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    float: right;
+}
+
+.begin-brick-text {
+    color: #fff;
+    font-size: 30px;
+    text-align: right;
+    line-height: 1;
+}
+
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    z-index: -1;
+  }
+
+/* COMPONENTS BRICK*/
+.comp-brick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(blue, pink);
+}
+
+.comp-brick-header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: static;
+    padding-bottom: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+.comp-brick-header-inner {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+}
+
+.comp-brick-inner {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    float: center;
+}
+
+.comp-brick-back {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    float: center;
+
+}
+
+.comp-brick-back-top {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.comp-brick-back-middle {
+    display: flex;
+    margin: auto;
+    color: #fff;
+    font-size: 20px;
+ 
+}
+
+.comp-brick-back-bottom {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.img {
+    width: 251px;
+    height: 451px;
+}
+
+.round {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 7px #666;
+}
+
+/* CAROUSEL BRICK */
+.carousel-brick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, blue, orange);
+}
+/* КАРУСЕЛЬ */
+.carousel  {
+    max-width: 1200px; 
+    margin: auto;
+    width:100%;
+ }
+ .carousel-wrapper {
+    margin: 10px 50px; 
+    overflow: hidden; 
+    position:relative;
+ }
+ .carousel-items {
+    width: 10000px; 
+    position: relative; 
+ }
+ .carousel-block {
+    float: left; 
+    width: 320px; 
+    max-width: 320px;
+    padding: 10px 10px 10px 0px; 
+ }
+ .carousel-block img{
+     display:block;
+ }
+ 
+ /*********** BUTTONS ***********/
+ .carousel-button-left , .carousel-button-right {
+    width: 25px; 
+    height: 36px; 
+    position: relative;
+    top: 80px; 
+    cursor: pointer; 
+    text-decoration:none;
+ }
+ .carousel-button-left {
+    float: left; 
+    background: url(assets/images/carousel-left.png); 
+ }
+ .carousel-button-right {
+    float: right;
+    background: url(assets/images/carousel-right.png); 
+ }
+ 
+ /*********** SHADOW ***********/
+ .shadow{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+ }
+
+
+
+
+/* PROMO BRICK*/
+.promo-brick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, green, yellow);
+}
+
+.promo-brick-header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: static;
+    padding-bottom: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+.promo-brick-header-inner {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+}
+
+.promo-brick-inner {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    max-height: 400px;
+    margin: 0 auto;
+    float: center;
+}
+
+.promo-brick-text {
+    padding-top: 40px;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+    justify-content: space-between;
+}
+
+.promo-brick-img {
+    max-height: 400px;
+    max-width: 100%;
+    margin: auto;
+    float: left;
+}
+
+.a {
+    text-align: center;
+}
+
+
+/* ORDER-BRICK */
+.order-brick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, purple, rgb(0, 162, 255));
+}
+
+.order-brick-header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: static;
+    padding-bottom: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+.order-price-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+}
+
+.order-form-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+    float: right;
+}
+
+.order-price {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.descr-list{
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+}
+
+.styled-input-container{
+    position: relative;
+}
+
+.styled-input{
+    height: 50px;
+    border-radius: 16px;
+    margin: auto;
+    width: 400px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.help-block{
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    color: black;
+}
+
+/* ТАЙМЕР */
+.deadline-timer {
+    color: red; 
+    font-weight: bold;
+}
+
+/* Анимация надписи */
+.pouring {
+    font-size: 40px;
+    line-height: 50px;
+    font-family: Verdana, sans-serif;
+    font-weight: 900;
+    position: relative;
+    background: rgb(172, 45, 172);
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.6);
+}
+.pouring:before {
+    content: '';
+    position: absolute;
+    filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, rgb(172, 45, 172) 1em, white 50%), repeating-linear-gradient(45deg, white, white 1em, #FFF 1em, rgb(172, 45, 172) 50%);
+    background-size: 3em 3em, 2em 2em;
+    animation-name: ani;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes ani {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@media (max-width:690px) {    
+    .pouring {font-size: 20px;}    
+}
+
+
